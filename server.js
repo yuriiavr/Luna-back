@@ -8,7 +8,7 @@ mongoose.set('strictQuery', true)
 
 mongoose.connect(DB_HOST)
   .then(() => app.listen(PORT, () => {
-    console.log(`Database connection successful at port ${PORT}`)
+    console.log(`Database connection successful at port ${PORT}, SERVER STARTED!`)
   }))
   .catch(error => {
     console.log(error.message);
