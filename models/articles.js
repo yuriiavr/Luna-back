@@ -5,6 +5,7 @@ const articleSchema = new Schema(
     title: String,
     sub: String,
     thumbSrc: String,
+    thumbSrcV: String,
     favorite: {
         type: Boolean,
         default: false,

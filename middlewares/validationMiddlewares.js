@@ -6,6 +6,7 @@ module.exports = {
       title: Joi.string().min(5).required(),
       sub: Joi.string().min(5).required(),
       thumbSrc: Joi.string().required(),
+      thumbSrcV: Joi.string().required(),
     });
     const validationResult = schema.validate(req.body);
     if (validationResult.error) {
